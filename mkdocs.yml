@@ -1,0 +1,276 @@
+# Project Information
+site_name: Planning été
+site_description: Site prépa
+site_author: Taher
+site_url: https://bjtaher.github.io/
+strict: false
+
+# Repository
+repo_name: 'tbj/bjtaher.github.io'
+repo_url: 'https://github.com/bjtaher/bjtaher.github.io'
+edit_uri: 'https://github.com/bjtaher/bjtaher.github.io'
+
+# Copyright
+copyright: ''
+
+# Contents
+nav:
+  - Introduction:
+    - Présentation: index.md
+
+  - Planning:
+    - Présentation: plans/plan.md
+    - Semaine 1 (2.06 - 8.06): plans/s1.md
+    - Semaine 2 (9.06 - 15.06): plans/s2.md
+    - Semaine 3 (16.06 - 22.06): plans/s3.md
+    - Semaine 4 (23.06 - 29.06): plans/s4.md
+    - Semaine 5 (30.06 - 06.07): plans/s5.md
+    - Semaine 6 (7.07 - 13.07): plans/s6.md
+    - Semaine 7 (14.07 - 20.07): plans/s7.md
+    - Semaine 8 (21.07 - 27.07): plans/s8.md
+    - Semaine 9 (28.07 - 3.08): plans/s9.md
+    - Semaine 10 (4.08 - 10.08): plans/s10.md
+    - Semaine 11 (11.08 - 17.08): plans/s11.md
+    - Semaine 12 (18.08 - 24.08): plans/s12.md
+    - Semaine 13 (25.08 - 31.08): plans/s13.md
+
+  - Mathématiques:
+    - Présentation: maths/index.md
+    - EVN - Normes, suites: maths/1.md
+    - Intégration sur un segment: maths/2.md
+    - Ensembles, applications: maths/3.md
+    - Développements limités: maths/4.md
+    - Intégration sur un intervalle: maths/5.md
+    - Groupes, anneaux: maths/6.md
+    - Séries numériques: maths/7.md
+    - Algèbre linéaire: maths/8.md
+    - Matrices: maths/9.md
+    - Suites de fonctions: maths/10.md
+    - Théorème de convergence dominée, intégrale dépendant d'un paramètre: maths/11.md
+    - Séries de fonctions: maths/12.md
+    - Déterminants: maths/13.md
+    - Réduction (1ère partie): maths/14.md
+    - EVN - Topologie: maths/15.md
+    - Révisions sur la convexité: maths/16.md
+    - Dénombrabilité, familles sommables: maths/17.md
+    - EVN - fonctions d'une variable réelle: maths/18.md
+    - Arithmétiques, polynômes: maths/19.md
+    - Réduction (2e partie): maths/20.md
+    - Séries entières: maths/21.md
+    - EVN - applications linéaires, connexité: maths/22.md
+    - EVN - généralisations: maths/23.md
+    - Équations différentielles linéaires: maths/24.md
+    - Fonctions de plusieurs variables - calcul différentiel: maths/25.md
+    - Fonctions de plusieurs variables - extrema: maths/26.md
+    - Espaces préhilbertiens: maths/27.md
+    - Endomorphismes des espaces euclidiens: maths/28.md
+    - Espaces probabilisés: maths/29.md
+    - Variables aléatoires: maths/30.md
+
+  - Informatique:
+    - Présentation: informatique/index.md
+    - Programmation: informatique/prog.md
+    - Langages formels: informatique/langages.md
+    - Automates: informatique/automates.md
+    - Algorithmique des graphes: informatique/graphes.md
+    - Décidabilité et classes de complexité: informatique/decidabilite.md
+    - Grammaires algébriques: informatique/grammaires.md
+    - Algorithmes d'approximation: informatique/approx.md
+    - Algorithmes probabilistes: informatique/proba.md
+    - Algorithmique des jeux: informatique/jeux.md
+    - Logique: informatique/logique.md
+    - Concurrence: informatique/concurrence.md
+  - Physique:
+    - Présentation: physique/index.md
+    - Electrocinétique:
+      - Dipole électrique: physique/cinetique/dipole_elec.md
+      - Régime transitoire du premier ordre: physique/cinetique/transitoire_1.md
+      - Oscillo harmonique: physique/cinetique/oscillateur_har.md
+      - RLC transitoire: physique/cinetique/rlc.md
+      - Régime sinusoidal: physique/cinetique/sin.md
+      - Filtres: physique/cinetique/filtres.md
+      - TS1 Analyse de Fourier d'un signal: physique/cinetique/ts1.md
+      - TS2 Filtrage analogique d’un signal périodique: physique/cinetique/ts2.md
+      - TS3 Echantillonnage et numérisation d'un signal: physique/cinetique/ts3.md
+      - TS4 Logiques combinatoire et séquentielle: physique/cinetique/ts4.md
+    - Mécanique:
+      - Cinématique: physique/meca/cinematique.md
+      - Lois de Newton: physique/meca/newton.md
+      - Dynamique: physique/meca/dynamique.md
+      - Travail et énergies: physique/meca/travail.md
+      - Systèmes conservatifs: physique/meca/conservatifs.md
+      - Mouvements de charges: physique/meca/mvt_charges.md
+      - Moment cinétique: physique/meca/moment.md
+      - Forces centrales: physique/meca/forces_centrales.md
+      - Mécanique solide: physique/meca/solide.md
+      - ME0 Révisions sup: physique/meca/me0.md
+      - ME1 Dynamique du point en référentiel non galiléen: physique/meca/me1.md
+      - ME2 Caractère non galiléen du référentiel terrestre: physique/meca/me2.md
+      - ME3 Lois du frottement solide: physique/meca/me3.md
+
+    - Électromagnétisme:
+      - EM1 Charges et courants électriques: physique/mag/em1.md
+      - EM2 Électrostatique: 
+        - EM2-1 Le champ électrostatique: physique/mag/em2-1.md
+        - EM2-2 Le potentiel électrostatique: physique/mag/em2-2.md
+        - EM2-3 Le dipôle électrostatique: physique/mag/em2-3.md
+      - Induction:
+        - Champ B: physique/mag/champB.md
+        - Forces de Laplace: physique/mag/laplace.md
+        - Induction: physique/mag/induction.md
+        - Circuit fixe dans B variable: physique/mag/variable.md
+        - Circuit mobile dans un champ stationnaire: physique/mag/stationnaire.md
+        - Révisions induction SUP: physique/mag/rev.md
+      - EM3 Magnétostatique:
+        - EM3-1 Le champ magnétostatique: physique/mag/em3-1.md
+        - EM3-2 Le potentiel magnétique: physique/mag/em3-2.md
+        - EM3-3 Le dipôle magnétique: physique/mag/em3-3.md
+      - EM4 Equations de Maxwell: physique/mag/em4.md
+      - EM5 Energie électromagnétique: physique/mag/em5.md
+      - EM6 Polarisation des ondes électromagnétiques: physique/mag/em6.md
+      - EM7 Dipôle oscillant: physique/mag/em7.md
+      - EM8 Propagation des ondes électromagnétiques dans le vide: physique/mag/em8.md
+      - EM9 Réflexion sur un conducteur parfait: physique/mag/em9.md
+      - EM10 Propagation d'une onde électromagnétique dans un conducteur ohmique: physique/mag/em10.md
+      - EM11 Introduction à la dispersion: physique/mag/em11.md
+      - EM12 Propagation d'une onde électromagnétique dans un plasma: physique/mag/em12.md
+
+    - Optique:
+      - Optique géométrique:
+        - Lois de snell-descartes: physique/opt/descartes.md
+        - Miroir plan: physique/opt/miroirplan.md
+        - Lentilles minces: physique/opt/lentilles.md
+        - Instruments optiques: physique/opt/instruments.md
+        - Récap: physique/opt/recap.md
+      - OP1 Introduction à l'optique ondulatoire:
+        - Généralites: physique/opt/generalites.md
+        - Ondes progressives: physique/opt/ondes.md
+        - Diffraction: physique/opt/diffraction.md
+        - Interférences: physique/opt/interferences.md
+      - OP2 Conditions d'interférences: physique/opt/op2.md
+      - OP3 Interférences à deux ondes par division du front d'onde: physique/opt/op3.md
+      - OP4 Interférences à deux ondes par division d'amplitude: physique/opt/op4.md
+
+    - Thermodynamique:
+      - Description d'un système: physique/thermo/description.md
+      - Premier principe et exemples: physique/thermo/pp.md
+      - Second principe: physique/thermo/sp.md
+      - Changements d'états: physique/thermo/chg_etats.md
+      - Machines thermiques: physique/thermo/machines.md
+      - TH0 Révisions de thermodynamique: physique/thermo/th0.md
+      - TH1 Diffusion thermique: physique/thermo/th1.md
+      - TH2 Rayonnement d'équilibre thermique: physique/thermo/th2.md
+      - Complément MPIE diffusion thermique: physique/thermo/complement.md
+
+    - Chimie:
+      - CH1 Transformations chimiques d'un système: physique/chimie/ch1.md
+      - CH2 Réactions acidobasiques: physique/chimie/ch2.md
+      - CH3 Réactions d'oxydoréduction: physique/chimie/ch3.md
+
+  - Colles: 
+    - S1 (16/09–20/09): colles/s1.md
+    - S2 (23/09–27/09): colles/s2.md
+    - S3 (30/09–04/10): colles/s3.md
+    - S4 (07/10–11/10): colles/s4.md
+    - S5 (14/10–18/10): colles/s5.md
+    - S6 (04/11–08/11): colles/s6.md
+    - S7 (11/11–15/11): colles/s7.md
+    - S8 (18/11–22/11): colles/s8.md
+    - S9 (25/11–29/11): colles/s9.md
+    - S10 (02/12–06/12): colles/s10.md
+    - S11 (09/12–13/12): colles/s11.md
+    - S12 (06/01–10/01): colles/s12.md
+    - S13 (13/01–17/01): colles/s13.md
+    - S14 (20/01–24/01): colles/s14.md
+    - S15 (27/01–31/01): colles/s15.md
+    - S16 (03/02–07/02): colles/s16.md
+    - S17 (10/02–14/02): colles/s17.md
+    - S18 (03/03–07/03): colles/s18.md
+    - S19 (10/03–14/03): colles/s19.md
+    - S20 (17/03–21/03): colles/s20.md
+
+
+# Theme
+theme:
+  name: material
+  custom_dir: 'mkdocs-material/material/templates'
+  static_templates:
+    - 404.html
+  language: 'fr'
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  include_search_page: false
+  search_index_only: true
+  favicon: 'favicon.ico'
+  icon:
+    logo: 'material/school'
+  features:
+    - content.action.edit
+    - navigation.tabs
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
+
+
+extra_javascript:
+  #- js/config.js
+  - https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js
+
+extra_css:
+  - css/extra.css
+
+markdown_extensions:
+  - document-offsets-injection:
+      # debug: true
+  - admonition
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: ""
+      slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: math
+          class: arithmatex
+          format: !!python/name:pymdownx.arithmatex.fence_mathjax_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+
