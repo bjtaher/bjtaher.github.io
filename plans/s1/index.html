@@ -5188,14 +5188,87 @@ Les deux premières semaines sont consacrées à des DM de maths sup de niveau e
 <p>Logique, quatre exercices (DM)</p>
 </li>
 </ul>
-<h3 data-original-document-end="430" data-original-document-start="406" id="réalisé">Réalisé<a class="headerlink" href="#réalisé" title="Permanent link"></a></h3>
-<ul data-original-document-end="430" data-original-document-start="406">
-<li>À remplir…</li>
+<h3 data-original-document-end="470" data-original-document-start="406" id="réalisé">Réalisé<a class="headerlink" href="#réalisé" title="Permanent link"></a></h3>
+<details class="note" data-original-document-end="1500" data-original-document-start="406">
+<summary>Inégalités de Shapiro (DM)</summary>
+<p>À retenir:</p>
+<ul>
+<li>
+<p><strong>La majoration <span class="arithmatex">\((\ast)\)</span></strong> :<br />
+  $$
+  \forall a_1, a_2 \in \mathbb{R}, \forall b_1, b_2 &gt; 0,\quad 
+  \frac{a_1^2}{b_1} + \frac{a_2^2}{b_2} \geq \frac{(a_1 + a_2)^2}{b_1 + b_2}.
+  $$</p>
+</li>
+<li>
+<p><strong>Le classique</strong> :<br />
+  $$
+  \frac{a^2 + b^2}{2} \geq ab
+  $$</p>
+</li>
+<li>
+<p>Pour étendre des inégalités, on peut utiliser des suites convergentes + th. de passage à la limite dans les inégalités larges.</p>
+</li>
 </ul>
+<p><br></p>
+<p>Il me semble qu'on peut démontrer 5.c directement sans passer par les questions intermédiaires:<br />
+On a démontré (2.a) que pour réels strictement positifs :<br />
+  $$
+  3(xy + xz + yz) \leq (x + y + z)^2.
+  $$</p>
+<p>En posant <span class="arithmatex">\(x = a + d\)</span>, <span class="arithmatex">\(y = b + e\)</span>, <span class="arithmatex">\(z = c + f\)</span>, on obtient :<br />
+  $$
+  3S \leq (a + b + c + d + e + f)^2,
+  $$</p>
+<p>avec<br />
+  $$
+  S = a(b + c) + b(c + d) + c(d + e) + d(e + f) + e(f + a) + f(a + b).
+  $$</p>
+<p>Donc :<br />
+  $$
+  3 \leq \frac{(a + b + c + d + e + f)^2}{S},
+  $$</p>
+<p>puis on applique <span class="arithmatex">\((\ast)\)</span> pour "linéariser".</p>
+</details>
+<details class="note" data-original-document-end="2924" data-original-document-start="1562">
+<summary>Logique, quatre exercices (DM)</summary>
+<p>À retenir:</p>
+<ul>
+<li>
+<p><strong>Ex1</strong>: Si on a un ensemble <span class="arithmatex">\(A\)</span> construit par induction et que <span class="arithmatex">\(A = \mathbb{N}\)</span>, alors si une propriété est propagée par les règles de <span class="arithmatex">\(A\)</span> alors la propriété est vraie pour tout <span class="arithmatex">\(N\)</span>, usage original du principe de récurrence. ex: preuve de cauchy de l'inégalité arithmético-geométrique.</p>
+</li>
+<li>
+<p><strong>Ex2</strong>: Importance de tester des cas simples (premiers termes de la suite ici)</p>
+</li>
+<li>
+<p><strong>Ex3</strong>: RAS</p>
+</li>
+<li>
+<p><strong>Ex4</strong>:<br />
+On traite <span class="arithmatex">\(n = 1\)</span> à part.<br />
+Le plus important a été de se ramener à:<br />
+$$
+n \text{bon} \Leftrightarrow \forall \ell \in ⟦0, n-1⟧, \exists p \in \text{{0, 1}}, \exists k \in ⟦1, n-1⟧, p \cdot T_{n-1} + T_k \equiv \ell (\mathrm{mod} n)
+$$</p>
+</li>
+</ul>
+<p>À partir de là on peut éliminer le cas <span class="arithmatex">\(n\)</span> impair car: <span class="arithmatex">\(T_{n-1} \equiv 0\ (\mathrm{mod}\ n)\)</span> et on conclut par le fait qu'il n'existe pas de surjection de <span class="arithmatex">\(⟦1, n−1⟧\)</span> sur <span class="arithmatex">\(⟦0, n−1⟧\)</span>.</p>
+<p>Pour le cas pair, <span class="arithmatex">\(T_{n-1} = -n/2 = n/2\ (\mathrm{mod}\ n)\)</span>.<br />
+Donc<br />
+$$
+n \text{bon} \Leftrightarrow \forall \ell \in ⟦0, n-1⟧, \exists p \in \text{{0, 1}}, \exists k \in ⟦1, n-1⟧, p \cdot \frac{n}{2} + T_k \equiv \ell (\mathrm{mod} n)
+$$</p>
+<p>À partir d'ici on montre facilement que n bon <span class="arithmatex">\(\Rightarrow\)</span> n/2 bon.<br />
+Par contraposée n pas bon <span class="arithmatex">\(\Rightarrow\)</span> 2n pas bon.<br />
+Par ce qui précédé, on peut dire que n bon <span class="arithmatex">\(\Rightarrow\)</span> n puissance de 2.</p>
+<p>Ensuite on montre que n bon <span class="arithmatex">\(\Rightarrow\)</span> 2n bon:<br />
+n bon <span class="arithmatex">\(\Rightarrow\)</span> <span class="arithmatex">\(k\)</span> existe tel que <span class="arithmatex">\(T_k \equiv \ell\ (\mathrm{mod}\ 2n)\)</span> ou <span class="arithmatex">\(T_k \equiv \ell + n\ (\mathrm{mod}\ 2n)\)</span><br />
+On change <span class="arithmatex">\(p\)</span> en <span class="arithmatex">\(1 - p\)</span> selon le besoin pour recouvrir tout ⟦0, 2n−1⟧ (ce qui revient à décaler l’indice <span class="arithmatex">\(k\)</span> de <span class="arithmatex">\(+2n\)</span>)</p>
+</details>
 <hr />
-<h2 data-original-document-end="445" data-original-document-start="437" id="mardi">Mardi<a class="headerlink" href="#mardi" title="Permanent link"></a></h2>
+<h2 data-original-document-end="3247" data-original-document-start="3239" id="mardi">Mardi<a class="headerlink" href="#mardi" title="Permanent link"></a></h2>
 <h3 id="objectifs_1">Objectifs<a class="headerlink" href="#objectifs_1" title="Permanent link"></a></h3>
-<ul data-original-document-end="529" data-original-document-start="462">
+<ul data-original-document-end="3331" data-original-document-start="3264">
 <li>
 <p>Ensembles syndétiques, lemme de Brown (DS)</p>
 </li>
@@ -5204,13 +5277,41 @@ Les deux premières semaines sont consacrées à des DM de maths sup de niveau e
 </li>
 </ul>
 <h3 id="réalisé_1">Réalisé<a class="headerlink" href="#réalisé_1" title="Permanent link"></a></h3>
+<details class="note" data-original-document-end="5279" data-original-document-start="3400">
+<summary>Images itérées (DM)</summary>
+<p>Points importants:</p>
 <ul>
-<li>À remplir…</li>
+<li>4.b très intéressante: je suis parti du fait (faux) que l'ensemble ne doit pas être dénombrable car sinon les opérations du sujet le réduisent à l'ensemble vide. donc, j'ai cherché une application qui préserve la mesure de [0, 1] (ou [0, 1[) en enlevant un nombre au plus dénombrable d'élements à chaque fois (ceci garanti que l'ensemble à la fin sera infini (même indénombrable) et on peut conclure). Le défi à été de trouver une fonction qui "élimine" des élements differents à chaque fois. J'ai essayé de "shifter" les élements par un nombre irrationnel puis prendre le reste mod 1 mais sans résultat satisfaisant =&gt; j'ai lu le corrigé.
+Il s'est avéré que ma contrainte sur l'ensemble <span class="arithmatex">\(X\)</span> était trop forte: en effet, on peut faire en sorte à ce que <span class="arithmatex">\(X\)</span> soit l'union de deux ensembles dénombrables tel que le second ensemble "alimente" le premier d'exactement un élement à chaque composition par <span class="arithmatex">\(f\)</span>. Le second ensemble (est dénombrable mais pas une union de plusieurs ensembles) est donc réduit à l'ensemble vide par les opérations du sujet, mais pas le premier qui garde les mêmes élements.</li>
 </ul>
+<p>A voir plus tard si c'est possible: Un ensemble indénombrable <span class="arithmatex">\(X\)</span> et une fonction qui retire (à chaque nouvelle composition) une partie non vide, au plus dénombrable d'élements de <span class="arithmatex">\(X\)</span>;
+<br>
+<strong>Tentative</strong>:
+Soit :
+- <span class="arithmatex">\(X = [0,1] \setminus \mathbb{Q}\)</span> (irrationnels dans <span class="arithmatex">\([0,1]\)</span>, indénombrable)
+- <span class="arithmatex">\((x_n)_{n \in \mathbb{N}} \subset X\)</span> une suite injective</p>
+<p>Définir <span class="arithmatex">\(f : X \to X\)</span> par :</p>
+<div class="arithmatex">\[
+f(x) =
+\begin{cases}
+x_{n+1} &amp; \text{si } x = x_n \text{ pour un certain } n \\
+x &amp; \text{sinon}
+\end{cases}
+\]</div>
+<p>Alors :
+- <span class="arithmatex">\(f^n(X) = X \setminus \{x_0, \dots, x_{n-1}\}\)</span>
+- <span class="arithmatex">\(f^{n-1}(X) \setminus f^n(X) = \{x_{n-1}\}\)</span>, donc dénombrable
+- <span class="arithmatex">\(\bigcap_{n} f^n(X) = X \setminus \{x_n\}_{n \in \mathbb{N}}\)</span>, encore indénombrable</p>
+</details>
+<details class="note" data-original-document-end="5371" data-original-document-start="5282">
+<summary>Ensembles syndétiques, lemme de Brown (DS)</summary>
+<p>Encore trop lent</p>
+<p>RAS sinon</p>
+</details>
 <hr />
-<h2 data-original-document-end="573" data-original-document-start="562" id="mercredi">Mercredi<a class="headerlink" href="#mercredi" title="Permanent link"></a></h2>
+<h2 data-original-document-end="5390" data-original-document-start="5379" id="mercredi">Mercredi<a class="headerlink" href="#mercredi" title="Permanent link"></a></h2>
 <h3 id="objectifs_2">Objectifs<a class="headerlink" href="#objectifs_2" title="Permanent link"></a></h3>
-<ul data-original-document-end="645" data-original-document-start="590">
+<ul data-original-document-end="5462" data-original-document-start="5407">
 <li>
 <p>Sommes, quatre exercices (DM)</p>
 </li>
@@ -5219,13 +5320,13 @@ Les deux premières semaines sont consacrées à des DM de maths sup de niveau e
 </li>
 </ul>
 <h3 id="réalisé_2">Réalisé<a class="headerlink" href="#réalisé_2" title="Permanent link"></a></h3>
-<ul>
-<li>À remplir…</li>
+<ul data-original-document-end="5499" data-original-document-start="5476">
+<li>À ecrire au propre...</li>
 </ul>
 <hr />
-<h2 data-original-document-end="686" data-original-document-start="678" id="jeudi">Jeudi<a class="headerlink" href="#jeudi" title="Permanent link"></a></h2>
+<h2 data-original-document-end="5514" data-original-document-start="5506" id="jeudi">Jeudi<a class="headerlink" href="#jeudi" title="Permanent link"></a></h2>
 <h3 id="objectifs_3">Objectifs<a class="headerlink" href="#objectifs_3" title="Permanent link"></a></h3>
-<ul data-original-document-end="772" data-original-document-start="703">
+<ul data-original-document-end="5600" data-original-document-start="5531">
 <li>
 <p>Matrices carrées d'ordre 2 (DM)</p>
 </li>
@@ -5235,12 +5336,12 @@ Les deux premières semaines sont consacrées à des DM de maths sup de niveau e
 </ul>
 <h3 id="réalisé_3">Réalisé<a class="headerlink" href="#réalisé_3" title="Permanent link"></a></h3>
 <ul>
-<li>À remplir…</li>
+<li>À ecrire au propre...</li>
 </ul>
 <hr />
-<h2 data-original-document-end="816" data-original-document-start="805" id="vendredi">Vendredi<a class="headerlink" href="#vendredi" title="Permanent link"></a></h2>
+<h2 data-original-document-end="5655" data-original-document-start="5644" id="vendredi">Vendredi<a class="headerlink" href="#vendredi" title="Permanent link"></a></h2>
 <h3 id="objectifs_4">Objectifs<a class="headerlink" href="#objectifs_4" title="Permanent link"></a></h3>
-<ul data-original-document-end="899" data-original-document-start="833">
+<ul data-original-document-end="5738" data-original-document-start="5672">
 <li>
 <p>Matrices bistochastiques (DS)</p>
 </li>
@@ -5249,13 +5350,13 @@ Les deux premières semaines sont consacrées à des DM de maths sup de niveau e
 </li>
 </ul>
 <h3 id="réalisé_4">Réalisé<a class="headerlink" href="#réalisé_4" title="Permanent link"></a></h3>
-<ul>
+<ul data-original-document-end="5764" data-original-document-start="5752">
 <li>À remplir…</li>
 </ul>
 <hr />
-<h2 data-original-document-end="941" data-original-document-start="932" id="samedi">Samedi<a class="headerlink" href="#samedi" title="Permanent link"></a></h2>
+<h2 data-original-document-end="5780" data-original-document-start="5771" id="samedi">Samedi<a class="headerlink" href="#samedi" title="Permanent link"></a></h2>
 <h3 id="objectifs_5">Objectifs<a class="headerlink" href="#objectifs_5" title="Permanent link"></a></h3>
-<ul data-original-document-end="1032" data-original-document-start="958">
+<ul data-original-document-end="5871" data-original-document-start="5797">
 <li>
 <p>Mantel, Ramsey, Zorn (DM)</p>
 </li>
@@ -5268,9 +5369,9 @@ Les deux premières semaines sont consacrées à des DM de maths sup de niveau e
 <li>À remplir…</li>
 </ul>
 <hr />
-<h2 data-original-document-end="1076" data-original-document-start="1065" id="dimanche">Dimanche<a class="headerlink" href="#dimanche" title="Permanent link"></a></h2>
+<h2 data-original-document-end="5915" data-original-document-start="5904" id="dimanche">Dimanche<a class="headerlink" href="#dimanche" title="Permanent link"></a></h2>
 <h3 id="objectifs_6">Objectifs<a class="headerlink" href="#objectifs_6" title="Permanent link"></a></h3>
-<ul data-original-document-end="1168" data-original-document-start="1093">
+<ul data-original-document-end="6007" data-original-document-start="5932">
 <li>
 <p>Théorèmes des deux et des quatre carrés (DM)</p>
 </li>
