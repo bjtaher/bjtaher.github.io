@@ -5277,7 +5277,7 @@ On change <span class="arithmatex">\(p\)</span> en <span class="arithmatex">\(1 
 </li>
 </ul>
 <h3 id="réalisé_1">Réalisé<a class="headerlink" href="#réalisé_1" title="Permanent link"></a></h3>
-<details class="note" data-original-document-end="5845" data-original-document-start="3400">
+<details class="note" data-original-document-end="6031" data-original-document-start="3400">
 <summary>Images itérées (DM)</summary>
 <p>Points importants:</p>
 <ul>
@@ -5286,32 +5286,42 @@ Il s'est avéré que ma contrainte sur l'ensemble <span class="arithmatex">\(X\)
 </ul>
 <p>A voir plus tard si c'est possible: Un ensemble indénombrable <span class="arithmatex">\(X\)</span> et une fonction qui retire (à chaque nouvelle composition) une partie non vide, au plus dénombrable d'élements de <span class="arithmatex">\(X\)</span>;
 <br>
-<strong>Tentative</strong>:
+<strong>Tentative(à vérifier)</strong>:
 Soit :
-- <span class="arithmatex">\(X = [0,1] \setminus \mathbb{Q}\)</span> (irrationnels dans <span class="arithmatex">\([0,1]\)</span>, indénombrable)
-- <span class="arithmatex">\((x_n)_{n \in \mathbb{N}} \subset X\)</span> une suite injective</p>
-<p>Définir <span class="arithmatex">\(f : X \to X\)</span> par :</p>
+- <span class="arithmatex">\(X = ([0,1]\setminus\mathbb{Q})\cup\{0,1\}\)</span> (irrationnels + points limites, indénombrable)
+- <span class="arithmatex">\((x_n)_{n\in\mathbb{N}}\subset X\)</span> injective avec <span class="arithmatex">\(x_n \to 1\)</span></p>
+<p>Définir <span class="arithmatex">\(f : X\to X\)</span> par :</p>
 <div class="arithmatex">\[
-f(x) =
+f(x) = 
 \begin{cases}
-x_{n+1} &amp; \text{si } x = x_n \text{ pour un certain } n \\
-x &amp; \text{sinon}
+x_{n+1}, &amp; \text{si } x = x_n \text{ pour un certain } n \\[6pt]
+0, &amp; \text{si } x = 1 \\[6pt]
+x, &amp; \text{sinon}
 \end{cases}
 \]</div>
 <p>Alors :
-- <span class="arithmatex">\(f^n(X) = X \setminus \{x_0, \dots, x_{n-1}\}\)</span>
-- <span class="arithmatex">\(f^{n-1}(X) \setminus f^n(X) = \{x_{n-1}\}\)</span>, donc dénombrable
-- <span class="arithmatex">\(\bigcap_{n} f^n(X) = X \setminus \{x_n\}_{n \in \mathbb{N}}\)</span>, encore indénombrable</p>
+- <span class="arithmatex">\(f^n(X) = X\setminus\{x_0,\dots,x_{n-1}\}\)</span></p>
+<ul>
+<li>
+<p><span class="arithmatex">\(f^{n-1}(X)\setminus f^n(X)=\{x_{n-1}\}\)</span>, donc dénombrable</p>
+</li>
+<li>
+<p><span class="arithmatex">\(f^\omega(X) = X\setminus\{x_n : n\in\mathbb{N}\}\)</span>, encore indénombrable</p>
+</li>
+<li>
+<p>Mais : <span class="arithmatex">\(f[f^\omega(X)] = f^\omega(X)\setminus\{1\} \neq f^\omega(X)\)</span>, car le point <span class="arithmatex">\(1\)</span> est retiré exactement à la limite.</p>
+</li>
+</ul>
 </details>
-<details class="note" data-original-document-end="5937" data-original-document-start="5848">
+<details class="note" data-original-document-end="6123" data-original-document-start="6034">
 <summary>Ensembles syndétiques, lemme de Brown (DS)</summary>
 <p>Encore trop lent</p>
 <p>RAS sinon</p>
 </details>
 <hr />
-<h2 data-original-document-end="5956" data-original-document-start="5945" id="mercredi">Mercredi<a class="headerlink" href="#mercredi" title="Permanent link"></a></h2>
+<h2 data-original-document-end="6142" data-original-document-start="6131" id="mercredi">Mercredi<a class="headerlink" href="#mercredi" title="Permanent link"></a></h2>
 <h3 id="objectifs_2">Objectifs<a class="headerlink" href="#objectifs_2" title="Permanent link"></a></h3>
-<ul data-original-document-end="6028" data-original-document-start="5973">
+<ul data-original-document-end="6214" data-original-document-start="6159">
 <li>
 <p>Sommes, quatre exercices (DM)</p>
 </li>
@@ -5320,13 +5330,13 @@ x &amp; \text{sinon}
 </li>
 </ul>
 <h3 id="réalisé_2">Réalisé<a class="headerlink" href="#réalisé_2" title="Permanent link"></a></h3>
-<ul data-original-document-end="6065" data-original-document-start="6042">
+<ul data-original-document-end="6251" data-original-document-start="6228">
 <li>À ecrire au propre...</li>
 </ul>
 <hr />
-<h2 data-original-document-end="6080" data-original-document-start="6072" id="jeudi">Jeudi<a class="headerlink" href="#jeudi" title="Permanent link"></a></h2>
+<h2 data-original-document-end="6266" data-original-document-start="6258" id="jeudi">Jeudi<a class="headerlink" href="#jeudi" title="Permanent link"></a></h2>
 <h3 id="objectifs_3">Objectifs<a class="headerlink" href="#objectifs_3" title="Permanent link"></a></h3>
-<ul data-original-document-end="6166" data-original-document-start="6097">
+<ul data-original-document-end="6352" data-original-document-start="6283">
 <li>
 <p>Matrices carrées d'ordre 2 (DM)</p>
 </li>
@@ -5339,9 +5349,9 @@ x &amp; \text{sinon}
 <li>À ecrire au propre...</li>
 </ul>
 <hr />
-<h2 data-original-document-end="6221" data-original-document-start="6210" id="vendredi">Vendredi<a class="headerlink" href="#vendredi" title="Permanent link"></a></h2>
+<h2 data-original-document-end="6407" data-original-document-start="6396" id="vendredi">Vendredi<a class="headerlink" href="#vendredi" title="Permanent link"></a></h2>
 <h3 id="objectifs_4">Objectifs<a class="headerlink" href="#objectifs_4" title="Permanent link"></a></h3>
-<ul data-original-document-end="6304" data-original-document-start="6238">
+<ul data-original-document-end="6490" data-original-document-start="6424">
 <li>
 <p>Matrices bistochastiques (DS)</p>
 </li>
@@ -5350,13 +5360,13 @@ x &amp; \text{sinon}
 </li>
 </ul>
 <h3 id="réalisé_4">Réalisé<a class="headerlink" href="#réalisé_4" title="Permanent link"></a></h3>
-<ul data-original-document-end="6330" data-original-document-start="6318">
+<ul data-original-document-end="6516" data-original-document-start="6504">
 <li>À remplir…</li>
 </ul>
 <hr />
-<h2 data-original-document-end="6346" data-original-document-start="6337" id="samedi">Samedi<a class="headerlink" href="#samedi" title="Permanent link"></a></h2>
+<h2 data-original-document-end="6532" data-original-document-start="6523" id="samedi">Samedi<a class="headerlink" href="#samedi" title="Permanent link"></a></h2>
 <h3 id="objectifs_5">Objectifs<a class="headerlink" href="#objectifs_5" title="Permanent link"></a></h3>
-<ul data-original-document-end="6437" data-original-document-start="6363">
+<ul data-original-document-end="6623" data-original-document-start="6549">
 <li>
 <p>Mantel, Ramsey, Zorn (DM)</p>
 </li>
@@ -5369,9 +5379,9 @@ x &amp; \text{sinon}
 <li>À remplir…</li>
 </ul>
 <hr />
-<h2 data-original-document-end="6481" data-original-document-start="6470" id="dimanche">Dimanche<a class="headerlink" href="#dimanche" title="Permanent link"></a></h2>
+<h2 data-original-document-end="6667" data-original-document-start="6656" id="dimanche">Dimanche<a class="headerlink" href="#dimanche" title="Permanent link"></a></h2>
 <h3 id="objectifs_6">Objectifs<a class="headerlink" href="#objectifs_6" title="Permanent link"></a></h3>
-<ul data-original-document-end="6573" data-original-document-start="6498">
+<ul data-original-document-end="6759" data-original-document-start="6684">
 <li>
 <p>Théorèmes des deux et des quatre carrés (DM)</p>
 </li>
